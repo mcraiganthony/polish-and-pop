@@ -5,6 +5,7 @@ var browserSync  = require('browser-sync'),
     concat       = require("gulp-concat"),
     csso         = require("gulp-csso"),
     duration     = require("gulp-duration"),
+    ghpages      = require("gulp-gh-pages"),
     less         = require('gulp-less'),
     notify       = require("gulp-notify"),
     plumber      = require('gulp-plumber'),
@@ -70,6 +71,13 @@ gulp.task('browser-sync', function() {
       baseDir: 'dist/'
     }
   });
+});
+
+
+// Website
+gulp.task('website', function () {
+  return gulp.src('./dist/**/*')
+    .pipe(ghpages());
 });
 
 
