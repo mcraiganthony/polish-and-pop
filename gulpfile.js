@@ -19,11 +19,11 @@ var paths =  {
     "src_files": "dist/*.html"
   },
   "styles": {
-    "src_files": "assets/less/**/*.less",
+    "src_files": "src/less/**/*.less",
     "dist_dir": "dist/css/"
   },
   "js": {
-    "src_files": "assets/js/*.js",
+    "src_files": "src/js/*.js",
     "dist_dir": "dist/js/"
   }
 };
@@ -31,7 +31,7 @@ var paths =  {
 
 // Styles
 gulp.task('styles', function() {
-  return gulp.src(["assets/less/app.less"])
+  return gulp.src(["src/less/app.less"])
     .pipe(less({ compress: true }))
     .pipe(autoprefixer({ browsers: ['last 2 versions','ie 9'], cascade: false }))
     .pipe(gulp.dest(paths.styles.dist_dir))
