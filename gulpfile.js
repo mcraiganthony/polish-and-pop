@@ -16,7 +16,7 @@ var browserSync  = require('browser-sync'),
 // Path Variables
 var paths =  {
   "html": {
-    "src_files": "*.html"
+    "src_files": "dist/*.html"
   },
   "styles": {
     "src_files": "assets/less/**/*.less",
@@ -57,10 +57,18 @@ gulp.task('js', function() {
 });
 
 
+// HTML
+gulp.task('html', function() {
+  return gulp.src([paths.html.src_files])
+    .pipe(reload({stream:true}));
+});
+
+
 // Watch
 gulp.task("watch", function() {
   gulp.watch(paths.styles.src_files, ["styles"]);
   gulp.watch(paths.js.src_files, ["js"]);
+  gulp.watch(paths.html.src_files, ["html"]);
 });
 
 
