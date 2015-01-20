@@ -1,0 +1,59 @@
+// File: mixins.less
+// Note: Custom mixins, overrides, extends
+
+
+// Borders
+// -------------------------
+
+.border(@color: @gray-light, @style: solid, @width: 1px) {
+  border-color: @color;
+  border-style: @style;
+  border-width: @width;
+}
+
+
+// Overflow
+// --------------------------
+
+.overflow-hidden() {
+  overflow: hidden;
+}
+
+
+// Pointer
+// --------------------------
+
+.pointer() {
+  cursor: pointer;
+}
+
+
+// Preserve 3D
+// -------------------------
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+// Use on container that has element using .vertical-align mixin. Prevents 1/2 pixel positioning.
+
+.preserve-3d() {
+  transform-style: preserve-3d;
+}
+
+
+// Vertical align
+// -------------------------
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+
+.vert-align(@position:relative) {
+  position: @position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
