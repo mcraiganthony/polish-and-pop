@@ -10,10 +10,12 @@
     background-image: url('../img/fpo-intro.jpg');
   }
   &__container {
-    &:extend(.container-fluid);
     max-width: 670px;
   }
   &__headline {
+    h1,p {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    }
     text-align: center;
     padding: 100px 0;
     h1 {
@@ -28,9 +30,6 @@
 
   @media (min-width: @screen-lg-min) {
     background-attachment: fixed;
-    &--home {
-      background-position: 0px -200px;
-    }
   }
 }
 

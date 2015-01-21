@@ -18,6 +18,10 @@ var paths =  {
   "html": {
     "src_files": "dist/*.html"
   },
+  "icons": {
+    "src_dir": "src/fonts/**",
+    "dist_dir": "dist/css/fonts/"
+  },
   "images": {
     "src_dir": "src/img/**",
     "dist_dir": "dist/img/"
@@ -67,6 +71,12 @@ gulp.task('html', function() {
     .pipe(reload({stream:true}));
 });
 
+// Icons
+gulp.task('icons', function() {
+  return gulp.src([paths.icons.src_dir])
+    .pipe(gulp.dest(paths.icons.dist_dir))
+    .pipe(reload({stream:true}));
+});
 
 // Images
 gulp.task('images', function() {
@@ -102,7 +112,7 @@ gulp.task('website', function () {
 
 
 // Gulp Default
-gulp.task('default', ['styles','js','images']);
+gulp.task('default', ['styles','js','images','icons']);
 
 
 // Gulp Server
