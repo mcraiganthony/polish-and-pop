@@ -2,7 +2,7 @@
 // Note: Large hero section.
 
 .hero {
-  
+  &:extend(.bg-gray-lightest);
   background-size: cover;
   padding: 60px 0;
 
@@ -26,6 +26,9 @@
       color: @gray-lightest;
       font-family: @font-family-serif;
       font-weight: normal;
+      @media (min-width: @screen-md-min) {
+        font-size: 18px;
+      }
     }
   }
 

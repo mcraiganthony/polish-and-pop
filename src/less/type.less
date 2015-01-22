@@ -1,12 +1,45 @@
 // File: type.less
 // Note: Typography
 
+
+// Contextual backgrounds
+// -------------------------
+
+.bg-gray-lightest {
+  .bg-variant(@gray-lightest);
+}
+.bg-gray-lighter {
+  .bg-variant(@gray-lighter);
+}
+.bg-gray-light {
+  .bg-variant(@gray-light);
+}
+.bg-gray {
+  .bg-variant(@gray);
+  color: @white;
+}
+.bg-gray-dark {
+  .bg-variant(@gray-dark);
+  color: @white;
+}
+.bg-gray-darker {
+  .bg-variant(@gray-darker);
+  color: @white;
+}
+.bg-white {
+  .bg-variant(@white);
+}
+
+
 // Contextual colors
+// -------------------------
 
 .text-muted {
   .text-emphasis-variant(@text-muted);
 }
 
-// Ex: 16px base font * 75% = 12px
 
-.xsmall  { font-size: 75%; }
+// Font sizes
+// -------------------------
+
+.xsmall  { font-size: 75%; } // Ex: 16px base font * 75% = 12px
