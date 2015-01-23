@@ -14,18 +14,17 @@ a {
 
 body {
   position: relative;
-}
-
-body:after {
-  content: "";
-  background: url('../img/bg-black-triangles.png') fixed;
-  opacity: 0.15;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
+  &:after {
+    content: "";
+    background: url('../img/bg-black-triangles.png') fixed;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 }
 
 
@@ -43,14 +42,14 @@ img {
 
 section {
   padding: @grid-gutter-width 0;
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @screen-lg-min) {
     padding: @grid-gutter-width*2 0;
   }
 }
 
 .section-header {
   margin-bottom: @margin-xxlarge;
- text-align: center;
+  //text-align: center;
 }
 
 .section-header__headline {
@@ -75,11 +74,11 @@ section {
 // -------------------------
 
 .site-wrapper {
-  box-shadow: 0px 10px 10px rgba(0,0,0, 0.5);
   margin: 0 auto;
   max-width: 1200px;
-  //max-width: 1366px;
-  //&:extend(.container);
+  @media(min-width: @screen-lg-min){
+    box-shadow: 0px 10px 10px rgba(0,0,0, 0.5);
+  }
 }
 
 

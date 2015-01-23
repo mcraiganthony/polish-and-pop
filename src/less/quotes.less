@@ -1,0 +1,56 @@
+// File: quotes.less
+// Note: 
+
+.quote {
+  position: relative;
+  &:after {
+    content: "";
+    background: url('../img/bg-black-triangles.png');
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;   
+  }
+  &--primary {
+    background-color: @brand-primary;
+  }
+  &--secondary {
+    background-color: darken(@brand-secondary,8%);
+  }
+  // make it sit above triangles
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.quote__container {
+  margin: @margin-large auto;
+  max-width: @screen-xs-min;
+  padding: 0 @padding-half-gutter;
+  text-align: center;
+  @media (min-width: @screen-sm-min){
+    max-width: @screen-sm-min;
+  }
+}
+
+.quote__text {
+  color: @gray-lightest;
+  font-family: @font-family-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.quote__author {
+  &:extend(.font-weight-light);
+  color: @gray-lightest;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+

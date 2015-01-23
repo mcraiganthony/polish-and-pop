@@ -18,7 +18,7 @@
 
 .profile__avatar__img {
   &:extend(.img-circle);
-  border: 6px solid @gray-light;
+  border: 6px solid @gray-lighter;
   max-width: 180px;
   width: 100%;
   @media (min-width: @screen-sm-min) {
@@ -28,7 +28,7 @@
 }
 
 .profile__info {
-  font-weight: @font-weight-light;
+  &:extend(.font-weight-light);
   text-align: center;
   @media (min-width: @screen-sm-min) {
     padding-top: 20px;
@@ -37,7 +37,7 @@
 }
 
 .profile__info__name {
-  font-weight: 300;
+  &:extend(.font-weight-light);
 }
 
 .profile__info__phone,.profile__info__email {
