@@ -28,6 +28,7 @@
 }
 
 .profile__info {
+  font-weight: @font-weight-light;
   text-align: center;
   @media (min-width: @screen-sm-min) {
     padding-top: 20px;
@@ -52,20 +53,19 @@
 }
 
 .profile__info__social {
-  margin-bottom: @margin-large;
- > a {
-  font-size: 32px;
-  margin: 0 @margin-xsmall;
-  @media (min-width: @screen-sm-min) {
-    &:first-child {
-      margin-left: 0;
+  > a {
+    font-size: 32px;
+    margin: 0 @margin-xsmall;
+    @media (min-width: @screen-sm-min) {
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
- }
 }
 
 .profile__blockquote {
-  color: @gray-dark;
+  color: @brand-secondary;
   font: italic 400 18px @font-family-serif;
   line-height: 26px;
   margin-top: 46px;
