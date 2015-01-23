@@ -2,8 +2,15 @@
 <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="73.62px" height="67.629px" viewBox="0 0 73.62 67.629" enable-background="new 0 0 73.62 67.629" xml:space="preserve">
-<circle fill="none" stroke="#18BDC4" stroke-width="1.2779" stroke-miterlimit="10" cx="29.869" cy="35.619" r="29.229"/>
-<circle fill="none" stroke="#EE2C7B" stroke-width="1.2779" stroke-miterlimit="10" cx="41.355" cy="35.365" r="31.626"/>
-<ellipse fill="none" stroke="#9E4198" stroke-width="1.2779" stroke-miterlimit="10" cx="36.817" cy="29.869" rx="28.99" ry="29.23"/>
+	 width="290.645px" height="266.684px" viewBox="0 0 290.645 266.684" enable-background="new 0 0 290.645 266.684"
+	 xml:space="preserve">
+<path fill="none" stroke="#18BDC4" stroke-width="1.2779" stroke-miterlimit="10" d="M234.475,140.557
+	c0,64.574-52.344,116.922-116.918,116.922S0.639,205.131,0.639,140.557S52.983,23.643,117.557,23.643
+	S234.475,75.983,234.475,140.557z"/>
+<path fill="none" stroke="#EE2C7B" stroke-width="1.2779" stroke-miterlimit="10" d="M290.006,139.542
+	c0,69.867-56.633,126.504-126.5,126.504S36.999,209.409,36.999,139.542c0-69.863,56.641-126.504,126.508-126.504
+	S290.006,69.678,290.006,139.542z"/>
+<path fill="none" stroke="#9E4198" stroke-width="1.2779" stroke-miterlimit="10" d="M261.311,117.557
+	c0,64.574-51.914,116.922-115.961,116.922S29.389,182.131,29.389,117.557c0-64.57,51.914-116.918,115.961-116.918
+	S261.311,52.987,261.311,117.557z"/>
 </svg>
