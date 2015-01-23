@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
-	$('[data-toggle="tooltip"]').tooltip();
 
-	// .js-hero__headline reduce opacity when scrolling down
+	// Hero
 	$(window).scroll(function(){
 		if($(window).width() > 1260) {
 			windowScroll = $(window).scrollTop();
@@ -12,5 +11,12 @@ $(document).ready(function() {
 			$('.js-hero__headline').css('opacity',contentOpacity.toFixed(2));
 		}
 	});
+
+	// Instantiate some stuff on larger screens
+	if($(window).width() > 1260) {
+		$('[data-toggle="tooltip"]').tooltip();
+		window.sr = new scrollReveal();
+	}
+
 
 });

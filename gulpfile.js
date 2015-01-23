@@ -53,7 +53,8 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
   return gulp.src([
     'bower_components/jquery/dist/jquery.min.js',
-    'bower_components/bootstrap/dist/js/bootstrap.min.js',
+    'bower_components/bootstrap/js/tooltip.js',
+    'bower_components/scrollReveal.js/dist/scrollReveal.min.js',
     paths.js.src_files
     ])
     .pipe(concat('app.js'))
