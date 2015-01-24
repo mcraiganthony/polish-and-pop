@@ -56,6 +56,7 @@ gulp.task('js', function() {
     'bower_components/jquery/dist/jquery.min.js',
     'bower_components/bootstrap/js/tooltip.js',
     'bower_components/scrollReveal.js/dist/scrollReveal.min.js',
+    'bower_components/smoothScroll.js/smoothScroll.js',
     paths.js.src_files
     ])
     .pipe(concat('app.js'))
