@@ -2,6 +2,7 @@
 var browserSync  = require('browser-sync'),
     gulp         = require('gulp'),
     autoprefixer = require("gulp-autoprefixer"),
+    changed      = require('gulp-changed');
     concat       = require("gulp-concat"),
     csso         = require("gulp-csso"),
     duration     = require("gulp-duration"),
@@ -75,6 +76,7 @@ gulp.task('html', function() {
 // Icons
 gulp.task('icons', function() {
   return gulp.src([paths.icons.src_dir])
+    .pipe(changed(paths.icons.dist_dir))
     .pipe(gulp.dest(paths.icons.dist_dir))
     .pipe(reload({stream:true}));
 });
@@ -82,6 +84,7 @@ gulp.task('icons', function() {
 // Images
 gulp.task('images', function() {
   return gulp.src([paths.images.src_dir])
+    .pipe(changed(paths.images.dist_dir))
     .pipe(gulp.dest(paths.images.dist_dir))
     .pipe(reload({stream:true}));
 });

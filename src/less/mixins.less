@@ -15,7 +15,7 @@
 // Button Outline Variant
 // -------------------------
 
-.button-outline-variant(@color; @background; @border) {
+.button-outline-variant(@color; @background; @border; @hover-color) {
   color: @color;
   background-color: @background;
   border-color: @border;
@@ -25,9 +25,8 @@
   &:active,
   &.active,
   .open > .dropdown-toggle& {
-    color: darken(@color, 15%);
-    //background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    color: @hover-color;
+    background-color: @color;
   }
   &:active,
   &.active,
@@ -43,9 +42,9 @@
     &.focus,
     &:active,
     &.active {
-      color: darken(@color, 15%);
+      //color: darken(@color, 15%);
       //background-color: @background;
-          border-color: @border;
+          //border-color: @border;
     }
   }
 

@@ -41,7 +41,10 @@
   color: @gray-lightest;
   font-family: @font-family-serif;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.4;
+  @media (min-width: @screen-sm-min) {
+    line-height: 1.8;
+  }
 }
 
 .quote__author {

@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 
-	// Hero
+	// Hero text animations
+
 	$(window).scroll(function(){
 		if($(window).width() > 1260) {
 			windowScroll = $(window).scrollTop();
@@ -12,9 +13,12 @@ $(document).ready(function() {
 		}
 	});
 
-	// Instantiate some stuff on larger screens
+	// On larger screens, run some extra js
+
 	if($(window).width() > 1260) {
+		// Bootstrap tooltips
 		$('[data-toggle="tooltip"]').tooltip();
+		// See: https://github.com/julianlloyd/scrollReveal.js
 		window.sr = new scrollReveal();
 	}
 

@@ -4,7 +4,7 @@
 .hero {
   &:extend(.bg-gray-lightest);
   background-size: cover;
-  padding: 60px 0;
+  //padding: 60px 0;
 
   &--home {
     background-image: url('../img/fpo-intro.jpg');
@@ -13,11 +13,15 @@
     max-width: 670px;
   }
   &__headline {
+    text-align: center;
+    padding: @grid-gutter-width @padding-small;
+    @media (min-width: @screen-lg-min) {
+      background-attachment: fixed;
+      padding: @grid-gutter-width*2 0;
+    }
     h1,p {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
     }
-    text-align: center;
-    padding: 60px 0;
     h1 {
       &:extend(.font-weight-light);
       color: @white;
@@ -32,7 +36,6 @@
       }
     }
   }
-
   @media (min-width: @screen-lg-min) {
     background-attachment: fixed;
   }
