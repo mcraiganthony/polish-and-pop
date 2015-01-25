@@ -28,22 +28,25 @@
 }
 
 .quote__container {
-  margin: @margin-large auto;
+  /*margin: @margin-large auto;
   max-width: @screen-xs-min;
-  padding: 0 @padding-half-gutter;
+  padding: 0 @padding-half-gutter;*/
+  max-width: @screen-sm-min;
   text-align: center;
-  @media (min-width: @screen-sm-min){
+  /*@media (min-width: @screen-sm-min){
     max-width: @screen-sm-min;
-  }
+  }*/
 }
 
 .quote__text {
   color: @gray-lightest;
   font-family: @font-family-serif;
-  
   line-height: 1.4;
   @media (min-width: @screen-sm-min) {
     font-size: 18px;
+    line-height: 1.6;
+  }
+  @media (min-width: @screen-md-min) {
     line-height: 1.8;
   }
 }
@@ -53,6 +56,7 @@
   color: @gray-lightest;
   font-size: 14px;
   letter-spacing: 1px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
